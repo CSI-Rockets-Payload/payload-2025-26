@@ -16,3 +16,5 @@ The goal of the project is to run a machine learning model onboard a rocket to d
 
 ## Repo Structure
 TBD
+
+Grace branch!
