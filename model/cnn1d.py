@@ -1,74 +1,164 @@
 import tensorflow as tf
-from tensorflow.keras import layers, Model
+from tensorflow.keras import layers, Model, optimizers, losses
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 # Library Implementation of 1D CNN 
 
-class CNN1D(Model):
+class CAE1D(Model):
     def __init__(self, 
-                in_channels: int = 2,
-                enc_channels = (16, 32, 64),
-                enc_kernels  = (5, 5, 3),
-                dec_channels = (64, 32, 16),
+                input_dim: int = 52,
+                enc_channels = (16, 32, 32),
+                enc_kernels  = (4, 4, 1),
+                enc_strides = (2, 2, 1),
+                dec_channels = (32, 16, 1),
                 dec_kernels  = (3, 3, 3),
-                latent_dim: int = 16
+                dec_strides = (2, 2, 1),
+                num_classes = 2,
+                activation = "tanh",
+                output_activation = "softmax"
     ):
         """
         Parameters of the CNN
-        To add more for hyperparameter tuning later...
+        Implements the 1D Convolutional Autoencoder architecture
+        from Chen, Yu & Wang (2020) - Journal of Process Control.
         """
-        self.in_channels = in_channels
+        super().__init__()
+        self.input_dim = input_dim
         self.enc_channels = enc_channels
         self.enc_kernels = enc_kernels
+        self.enc_strides = enc_strides
         self.dec_channels = dec_channels
         self.dec_kernels = dec_kernels
-        self.latent_dim = latent_dim
+        self.dec_strides = dec_strides
+        self.num_classes = num_classes
+        self.activation = activation
+        self.output_activation = output_activation
+        
+        # Architecture building blocks
+        self.encoder_net = self._encoder()
+        self.decoder_net = self._decoder()
+        self.classifier_net = self._classifier()
 
     
-    def encoder(self):
+    # Phase 1: unsupervised
+    def _encoder(self):
         """
-        Build the encoder: (T, C) -> (latent_dim,)
-        2 convs, GAP, then Dense(latent_dim).
+        Build the encoder: Input vector -> convolution layers
         """
-        inp = layers.Input(shape=(None, self.in_channels))   
+        inp = layers.Input(shape=(self.input_dim, 1))
         x = inp
-        for c in self.enc_channels:
-            x = layers.Conv1D(filters=c, kernel_size=self.enc_kernels,
-                            strides=2, padding="same", activation="relu")(x)
-        x = layers.GlobalAveragePooling1D()(x)
-        z = layers.Dense(self.latent_dim, name="latent")(x)
-        return Model(inp, z, name="encoder_1d_cnn")
-    
+        for c, k, s in zip(self.enc_channels, self.enc_kernels, self.enc_strides):
+            x = layers.Conv1D(c, k, strides=s, padding="same",
+                              activation=self.activation)(x)
+        return Model(inp, x, name="encoder_1dcae")
 
-    def decoder(self):
+    def _decoder(self):
         """
-        Build the decoder: (latent_dim,) -> (~T, C)
+        Build the decoder: De-convolution layer -> output
         """
-        inp = layers.Input(shape=(None, self.enc_channels))  
-        x = layers.Conv1D(32, self.dec_kernels, padding="same", activation="relu")(inp)
-        out = layers.Conv1D(self.dec_channels, self.dec_kernels, padding="same", activation=None, name="reconstruction")(x)
-        return Model(inp, out, name="decoder_1d_cnn")
+        inp = layers.Input(shape=(None, self.enc_channels[-1]))
+        x = inp
+        for c, k, s in zip(self.dec_channels, self.dec_kernels, self.dec_strides):
+            # mirror deconvolutions with transposed convs
+            # x = layers.Conv1DTranspose(c, k, strides=s, padding="same",
+            #                            activation=self.activation)(x)
+            x = layers.UpSampling1D(size= s)(x)
+            x = layers.Conv1D(c, k, padding='same', activation=self.activation)(x)
+        out = layers.Activation(self.output_activation, name="reconstruction")(x)
+        return Model(inp, out, name="decoder_1dcae")
     
     def build_cnn1d_autoencoder(self):
         """
-        Autoencoder: (T, C) -> (T, C)
+        Autoencoder architecture for phase 1
         """
-        enc = self.encoder()
-        dec = self.decoder()
-
-        inp = layers.Input(shape=(None, self.enc_channels))
-        z = enc(inp)          
-        x_hat = dec(z)         
-        ae = Model(inp, x_hat, name="autoencoder_1d_cnn_simple")
-        return enc, ae
+        inp = layers.Input(shape=(self.input_dim, 1))
+        z = self.encoder_net(inp)
+        x_hat = self.decoder_net(z)
+        ae = Model(inp, x_hat, name="1DCAE_unsupervised")
+        ae.compile(optimizer=optimizers.Adam(1e-3), loss="mse")
+        return ae
     
-    def fit(): 
+    # Phase 2: supervised
+    def _classifier(self):
         """
-        Fit model
-        - Loss function: Mean Squared Error (MSE)
-        - Specify number of epochs 
+        Fine-tuning classifer for phase 2
+        """
+        inp = layers.Input(shape=(None, 32))
+        x = layers.GlobalAveragePooling1D()(inp)
+        out = layers.Dense(self.num_classes, activation="softmax")(x)
+        return Model(inp, out, name="classifier")
+
+    # Model training 
+    def train_two_phase(self, X_train, y_train, X_val=None, y_val=None,
+                        epochs_unsup=100, epochs_sup=50, batch_size=32):
+        """
+        Phase I : Unsupervised reconstruction training
+        Phase II : Fine-tuning classification head
         """
 
-    def visualize():
+        # Phase I
+        print("Phase I - Unsupervised training (Autoencoder)...")
+        ae = self.build_autoencoder()
+        hist1 = ae.fit(X_train, X_train,
+                       validation_data=(X_val, X_val) if X_val is not None else None,
+                       epochs=epochs_unsup, batch_size=batch_size, verbose=1)
+
+        # Phase II
+        print("\nPhase II - Fine-tuning (Classifier)...")
+        # Freeze encoder for stability or allow fine-tuning
+        self.encoder_net.trainable = True
+        clf = self.build_finetune_model()
+        hist2 = clf.fit(X_train, y_train,
+                        validation_data=(X_val, y_val) if X_val is not None else None,
+                        epochs=epochs_sup, batch_size=batch_size, verbose=1)
+
+        return ae, clf, hist1, hist2
+
+    def visualize(self, hist1=None, hist2=None):
         """
-        Plot loss over training 
+        Visualize training curves for phase 1 and 2
         """
+        plt.figure(figsize=(12, 5))
+
+        # Phase I: Unsupervised training (Reconstruction loss)
+        if hist1 is not None:
+            plt.subplot(1, 2, 1)
+            plt.plot(hist1.history['loss'], label='Train Loss')
+            if 'val_loss' in hist1.history:
+                plt.plot(hist1.history['val_loss'], label='Val Loss')
+            plt.title("Phase I: Reconstruction Loss")
+            plt.xlabel("Epochs (N iterations)")
+            plt.ylabel("Loss")
+            plt.legend()
+            plt.grid(True)
+
+        # Phase II: Fine-tuning (Classification)
+        if hist2 is not None:
+            plt.subplot(1, 2, 2)
+            if 'accuracy' in hist2.history:
+                plt.plot(hist2.history['accuracy'], label='Train Accuracy')
+            if 'val_accuracy' in hist2.history:
+                plt.plot(hist2.history['val_accuracy'], label='Val Accuracy')
+            plt.title("Phase II: Fine-tuning")
+            plt.xlabel("Epochs (M iterations)")
+            plt.ylabel("Accuracy")
+            plt.legend()
+            plt.grid(True)
+
+        plt.tight_layout()
+        plt.show()
+
+if __name__ == "__main__":
+    print("Building dummy CAE1D model...")
+
+    # dummy data (8 samples, 52 time steps, 1 feature)
+    X = np.random.rand(8, 52, 1).astype(np.float32)
+    y = tf.keras.utils.to_categorical(np.random.randint(0, 3, 8))
+
+    model = CAE1D()
+    ae = model.build_cnn1d_autoencoder()
+    ae.summary()
+    out = ae.predict(X)
+    print("Output shape:", out.shape)
