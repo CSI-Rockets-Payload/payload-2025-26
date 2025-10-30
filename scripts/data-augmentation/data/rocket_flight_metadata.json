@@ -1,0 +1,47 @@
+{
+  "preprocessing_date": "2025-10-30T18:09:02.308519",
+  "config": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "random_seed": 42,
+    "add_sensor_noise": true,
+    "sensor_noise_level": "medium",
+    "imu_sample_rate": 100.0,
+    "augment_training_data": true,
+    "augmentation_factor": 3,
+    "normalize_features": true,
+    "normalization_method": "standard",
+    "save_csv": true,
+    "save_hdf5": true,
+    "save_numpy": false,
+    "stratify_by": "apogee"
+  },
+  "random_seed": 42,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "n_train": 8316,
+  "n_val": 1782,
+  "n_test": 1782,
+  "n_total": 11880,
+  "normalization_method": "standard",
+  "normalized_features": [
+    "mass_variation_percent",
+    "cd_multiplier",
+    "thrust_scale",
+    "cg_offset_m"
+  ],
+  "feature_means": [
+    2.5613275613275612,
+    0.9992845117845117,
+    1.0004509379509379,
+    -8.658008658008657e-05
+  ],
+  "feature_stds": [
+    8.544536599084141,
+    0.07070918399977565,
+    0.04077444288672678,
+    0.024472642946898007
+  ]
+}
