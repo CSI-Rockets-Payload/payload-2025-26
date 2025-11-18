@@ -85,7 +85,8 @@ class CAE1D(Model):
         """
         Fine-tuning classifer for phase 2
         """
-        inp = layers.Input(shape=(None, 32))
+        latent_channels = self.enc_channels[-1]
+        inp = layers.Input(shape=(None, latent_channels))
         x = layers.GlobalAveragePooling1D()(inp)
         out = layers.Dense(self.num_classes, activation="softmax")(x)
         return Model(inp, out, name="classifier")
@@ -94,27 +95,52 @@ class CAE1D(Model):
     def train_two_phase(self, X_train, y_train, X_val=None, y_val=None,
                         epochs_unsup=100, epochs_sup=50, batch_size=32):
         """
-        Phase I : Unsupervised reconstruction training
-        Phase II : Fine-tuning classification head
+        Phase I : Unsupervised reconstruction training (autoencoder)
+        Phase II : Fine-tuning classification head on latent features
         """
 
-        # Phase I
+        # ---------- Phase I: Autoencoder ----------
         print("Phase I - Unsupervised training (Autoencoder)...")
-        ae = self.build_autoencoder()
-        hist1 = ae.fit(X_train, X_train,
-                       validation_data=(X_val, X_val) if X_val is not None else None,
-                       epochs=epochs_unsup, batch_size=batch_size, verbose=1)
+        ae = self.build_cnn1d_autoencoder()
+        hist1 = ae.fit(
+            X_train, X_train,
+            validation_data=(X_val, X_val) if X_val is not None else None,
+            epochs=epochs_unsup,
+            batch_size=batch_size,
+            verbose=1
+        )
 
-        # Phase II
+        # ---------- Phase II: Classifier ----------
         print("\nPhase II - Fine-tuning (Classifier)...")
-        # Freeze encoder for stability or allow fine-tuning
+
+        # Optionally allow encoder to be fine-tuned (here we just use it as a feature extractor)
         self.encoder_net.trainable = True
-        clf = self.build_finetune_model()
-        hist2 = clf.fit(X_train, y_train,
-                        validation_data=(X_val, y_val) if X_val is not None else None,
-                        epochs=epochs_sup, batch_size=batch_size, verbose=1)
+
+        # Encode data once using the trained encoder
+        Z_train = self.encoder_net.predict(X_train, batch_size=batch_size)
+        if X_val is not None:
+            Z_val = self.encoder_net.predict(X_val, batch_size=batch_size)
+        else:
+            Z_val = None
+
+        # Use the classifier built in __init__ via _classifier()
+        clf = self.classifier_net
+        clf.compile(
+            optimizer=optimizers.Adam(1e-3),
+            loss="categorical_crossentropy",
+            metrics=["accuracy"]
+        )
+
+        hist2 = clf.fit(
+            Z_train, y_train,
+            validation_data=(Z_val, y_val) if Z_val is not None else None,
+            epochs=epochs_sup,
+            batch_size=batch_size,
+            verbose=1
+        )
 
         return ae, clf, hist1, hist2
+
 
     def visualize(self, hist1=None, hist2=None):
         """
@@ -153,12 +179,42 @@ class CAE1D(Model):
 if __name__ == "__main__":
     print("Building dummy CAE1D model...")
 
-    # dummy data (8 samples, 52 time steps, 1 feature)
-    X = np.random.rand(8, 52, 1).astype(np.float32)
-    y = tf.keras.utils.to_categorical(np.random.randint(0, 3, 8))
+    # dummy data (e.g., 128 samples, 52 time steps, 1 feature)
+    X = np.random.rand(128, 52, 1).astype(np.float32)
 
-    model = CAE1D()
+    # IMPORTANT: match num_classes with your model
+    num_classes = 2
+    y_int = np.random.randint(0, num_classes, 128)
+    y = tf.keras.utils.to_categorical(y_int, num_classes=num_classes)
+
+    model = CAE1D(input_dim=52, num_classes=num_classes)
+
+    # Run a short 2-phase training just to get histories
+    ae, clf, hist1, hist2 = model.train_two_phase(
+        X_train=X,
+        y_train=y,
+        X_val=None,
+        y_val=None,
+        epochs_unsup=3,    # keep tiny so it runs fast
+        epochs_sup=3,
+        batch_size=16
+    )
+
+    # Visualize both phases
+    model.visualize(hist1=hist1, hist2=hist2)
+
     ae = model.build_cnn1d_autoencoder()
     ae.summary()
     out = ae.predict(X)
     print("Output shape:", out.shape)
+    # print("Building dummy CAE1D model...")
+
+    # # dummy data (8 samples, 52 time steps, 1 feature)
+    # X = np.random.rand(8, 52, 1).astype(np.float32)
+    # y = tf.keras.utils.to_categorical(np.random.randint(0, 3, 8))
+
+    # model = CAE1D()
+    # ae = model.build_cnn1d_autoencoder()
+    # ae.summary()
+    # out = ae.predict(X)
+    # print("Output shape:", out.shape)
