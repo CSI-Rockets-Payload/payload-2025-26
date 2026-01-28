@@ -1,0 +1,164 @@
+[
+  {
+    "simulation_id": "sim_000000",
+    "timestamp": "2025-10-30T17:41:54.565082",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000001",
+    "timestamp": "2025-10-30T17:41:54.565231",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000002",
+    "timestamp": "2025-10-30T17:41:54.565273",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000003",
+    "timestamp": "2025-10-30T17:41:54.565313",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000004",
+    "timestamp": "2025-10-30T17:41:54.565345",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000005",
+    "timestamp": "2025-10-30T17:41:54.565367",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 0,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000006",
+    "timestamp": "2025-10-30T17:41:54.565388",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000007",
+    "timestamp": "2025-10-30T17:41:54.565410",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000008",
+    "timestamp": "2025-10-30T17:41:54.565445",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000009",
+    "timestamp": "2025-10-30T17:41:54.565469",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000010",
+    "timestamp": "2025-10-30T17:41:54.565489",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000011",
+    "timestamp": "2025-10-30T17:41:54.565509",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 5,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000012",
+    "timestamp": "2025-10-30T17:41:54.565528",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000013",
+    "timestamp": "2025-10-30T17:41:54.565546",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 0.95,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000014",
+    "timestamp": "2025-10-30T17:41:54.565566",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000015",
+    "timestamp": "2025-10-30T17:41:54.565584",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 1.0,
+    "wind_constant_x": 5
+  },
+  {
+    "simulation_id": "sim_000016",
+    "timestamp": "2025-10-30T17:41:54.565602",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 0
+  },
+  {
+    "simulation_id": "sim_000017",
+    "timestamp": "2025-10-30T17:41:54.565619",
+    "success": false,
+    "error": "type object 'Rocket' has no attribute 'from_ork'",
+    "mass_variation_percent": 10,
+    "cd_multiplier": 1.05,
+    "wind_constant_x": 5
+  }
+]

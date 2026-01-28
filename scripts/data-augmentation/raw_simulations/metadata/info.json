@@ -1,0 +1,10 @@
+{
+  "dataset_name": "rocket_flight_ml_v1",
+  "description": "Parametric variations for ML training",
+  "rocket_file": "../rocketpysim/template_rocket.ork",
+  "total_simulations": 270,
+  "successful": 0,
+  "failed": 270,
+  "generation_date": "2025-10-30T18:09:02.164272",
+  "elapsed_time_seconds": 0.00541234016418457
+}

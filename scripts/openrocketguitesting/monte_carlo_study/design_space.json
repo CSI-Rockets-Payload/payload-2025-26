@@ -1,0 +1,1602 @@
+[
+  {
+    "file": "monte_carlo_study/rocket_mc_000.ork",
+    "index": 0,
+    "combo_index": 0,
+    "mc_sample": 0,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10109582419422386,
+      "fin_root_chord": 0.1496332706385123,
+      "body_radius": 0.03037522559790323
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_001.ork",
+    "index": 1,
+    "combo_index": 0,
+    "mc_sample": 1,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10078947211623746,
+      "fin_root_chord": 0.1475650640873259,
+      "body_radius": 0.02934891024656884
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_002.ork",
+    "index": 2,
+    "combo_index": 0,
+    "mc_sample": 2,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10104455880796141,
+      "fin_root_chord": 0.15171638583166172,
+      "body_radius": 0.029991599421247853
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_003.ork",
+    "index": 3,
+    "combo_index": 0,
+    "mc_sample": 3,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09980154375158228,
+      "fin_root_chord": 0.14922478814539547,
+      "body_radius": 0.030388895967714474
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_004.ork",
+    "index": 4,
+    "combo_index": 0,
+    "mc_sample": 4,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10057546048032266,
+      "fin_root_chord": 0.15193656967962496,
+      "body_radius": 0.03023375467112602
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_005.ork",
+    "index": 5,
+    "combo_index": 0,
+    "mc_sample": 5,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09890895488713912,
+      "fin_root_chord": 0.150327508722095,
+      "body_radius": 0.0295205586995855
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_006.ork",
+    "index": 6,
+    "combo_index": 0,
+    "mc_sample": 6,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10131052468797033,
+      "fin_root_chord": 0.15078998639473237,
+      "body_radius": 0.02990756881822737
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_007.ork",
+    "index": 7,
+    "combo_index": 0,
+    "mc_sample": 7,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09941810387251948,
+      "fin_root_chord": 0.15282418814636942,
+      "body_radius": 0.029922735258965598
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_008.ork",
+    "index": 8,
+    "combo_index": 0,
+    "mc_sample": 8,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10111353398829505,
+      "fin_root_chord": 0.1481678322471118,
+      "body_radius": 0.030266154592776675
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_009.ork",
+    "index": 9,
+    "combo_index": 0,
+    "mc_sample": 9,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09817521506314893,
+      "fin_root_chord": 0.14792573695240527,
+      "body_radius": 0.03021541050150394
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_010.ork",
+    "index": 10,
+    "combo_index": 0,
+    "mc_sample": 10,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10097904862363127,
+      "fin_root_chord": 0.15280505839460526,
+      "body_radius": 0.02974387863546423
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_011.ork",
+    "index": 11,
+    "combo_index": 0,
+    "mc_sample": 11,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09948183882413948,
+      "fin_root_chord": 0.14981733486765483,
+      "body_radius": 0.030564486146360446
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_012.ork",
+    "index": 12,
+    "combo_index": 0,
+    "mc_sample": 12,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.0985196860213419,
+      "fin_root_chord": 0.14985422955735558,
+      "body_radius": 0.02958775939215438
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_013.ork",
+    "index": 13,
+    "combo_index": 0,
+    "mc_sample": 13,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10067925597873005,
+      "fin_root_chord": 0.14962291151323398,
+      "body_radius": 0.030271577134152596
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_014.ork",
+    "index": 14,
+    "combo_index": 0,
+    "mc_sample": 14,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10132903920558081,
+      "fin_root_chord": 0.1518285861449808,
+      "body_radius": 0.03005834290457036
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_015.ork",
+    "index": 15,
+    "combo_index": 0,
+    "mc_sample": 15,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09915331241572098,
+      "fin_root_chord": 0.15109497302384986,
+      "body_radius": 0.03011179777438734
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_016.ork",
+    "index": 16,
+    "combo_index": 0,
+    "mc_sample": 16,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09879963280990044,
+      "fin_root_chord": 0.14704417361850602,
+      "body_radius": 0.03014455969934499
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_017.ork",
+    "index": 17,
+    "combo_index": 0,
+    "mc_sample": 17,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10065940342636813,
+      "fin_root_chord": 0.151230992271758,
+      "body_radius": 0.02984016439182135
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_018.ork",
+    "index": 18,
+    "combo_index": 0,
+    "mc_sample": 18,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09983566310215336,
+      "fin_root_chord": 0.15041244717571736,
+      "body_radius": 0.029862428874386657
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_019.ork",
+    "index": 19,
+    "combo_index": 0,
+    "mc_sample": 19,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.0984581202941439,
+      "fin_root_chord": 0.1510104177707428,
+      "body_radius": 0.03048413917729574
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_020.ork",
+    "index": 20,
+    "combo_index": 0,
+    "mc_sample": 20,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10026094442592476,
+      "fin_root_chord": 0.15158999314449614,
+      "body_radius": 0.030081376532552502
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_021.ork",
+    "index": 21,
+    "combo_index": 0,
+    "mc_sample": 21,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10021431760263198,
+      "fin_root_chord": 0.15035524296447247,
+      "body_radius": 0.03039667361759996
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_022.ork",
+    "index": 22,
+    "combo_index": 0,
+    "mc_sample": 22,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09812327133827177,
+      "fin_root_chord": 0.14962030433539417,
+      "body_radius": 0.030428987940628576
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_023.ork",
+    "index": 23,
+    "combo_index": 0,
+    "mc_sample": 23,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09963411457489856,
+      "fin_root_chord": 0.152120418439609,
+      "body_radius": 0.02943335639299826
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_024.ork",
+    "index": 24,
+    "combo_index": 0,
+    "mc_sample": 24,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09823321096675627,
+      "fin_root_chord": 0.14868830335213198,
+      "body_radius": 0.030071212868035282
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_025.ork",
+    "index": 25,
+    "combo_index": 0,
+    "mc_sample": 25,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10064766605890758,
+      "fin_root_chord": 0.15034219291404766,
+      "body_radius": 0.030079269845538357
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_026.ork",
+    "index": 26,
+    "combo_index": 0,
+    "mc_sample": 26,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10065725416130955,
+      "fin_root_chord": 0.14943832116864042,
+      "body_radius": 0.030228387618778704
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_027.ork",
+    "index": 27,
+    "combo_index": 0,
+    "mc_sample": 27,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09866789167963082,
+      "fin_root_chord": 0.14713627243880315,
+      "body_radius": 0.029809131053000835
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_028.ork",
+    "index": 28,
+    "combo_index": 0,
+    "mc_sample": 28,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.1008894374023858,
+      "fin_root_chord": 0.1497712633815083,
+      "body_radius": 0.02976529882989864
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_029.ork",
+    "index": 29,
+    "combo_index": 0,
+    "mc_sample": 29,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10000417910041345,
+      "fin_root_chord": 0.147913872616279,
+      "body_radius": 0.03022326558801497
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_030.ork",
+    "index": 30,
+    "combo_index": 0,
+    "mc_sample": 30,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09978462510229613,
+      "fin_root_chord": 0.1492861273565789,
+      "body_radius": 0.02978835084397792
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_031.ork",
+    "index": 31,
+    "combo_index": 0,
+    "mc_sample": 31,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10052113037247556,
+      "fin_root_chord": 0.14917087566332032,
+      "body_radius": 0.029276443763788455
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_032.ork",
+    "index": 32,
+    "combo_index": 0,
+    "mc_sample": 32,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09847202360848206,
+      "fin_root_chord": 0.1527713859872971,
+      "body_radius": 0.030199887113361717
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_033.ork",
+    "index": 33,
+    "combo_index": 0,
+    "mc_sample": 33,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10079882853524301,
+      "fin_root_chord": 0.14859521976875711,
+      "body_radius": 0.030649614148893032
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_034.ork",
+    "index": 34,
+    "combo_index": 0,
+    "mc_sample": 34,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10111500361586319,
+      "fin_root_chord": 0.15130134113495397,
+      "body_radius": 0.02953319115999506
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_035.ork",
+    "index": 35,
+    "combo_index": 0,
+    "mc_sample": 35,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09908896624738064,
+      "fin_root_chord": 0.14757834577292098,
+      "body_radius": 0.02983048346204972
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_036.ork",
+    "index": 36,
+    "combo_index": 0,
+    "mc_sample": 36,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09982310515933444,
+      "fin_root_chord": 0.1482141801887714,
+      "body_radius": 0.030217211821772928
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_037.ork",
+    "index": 37,
+    "combo_index": 0,
+    "mc_sample": 37,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10031687827576759,
+      "fin_root_chord": 0.1480606366976354,
+      "body_radius": 0.02927697107280577
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_038.ork",
+    "index": 38,
+    "combo_index": 0,
+    "mc_sample": 38,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10103407811934084,
+      "fin_root_chord": 0.15131677773570562,
+      "body_radius": 0.03011633810567735
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_039.ork",
+    "index": 39,
+    "combo_index": 0,
+    "mc_sample": 39,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10050923536280978,
+      "fin_root_chord": 0.15050458781347642,
+      "body_radius": 0.029880322186263488
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_040.ork",
+    "index": 40,
+    "combo_index": 0,
+    "mc_sample": 40,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09833777728455956,
+      "fin_root_chord": 0.14949484441302366,
+      "body_radius": 0.030109998341985883
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_041.ork",
+    "index": 41,
+    "combo_index": 0,
+    "mc_sample": 41,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09997596327697808,
+      "fin_root_chord": 0.1489791672739967,
+      "body_radius": 0.030178435529574752
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_042.ork",
+    "index": 42,
+    "combo_index": 0,
+    "mc_sample": 42,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.0984136118708902,
+      "fin_root_chord": 0.15052586743306626,
+      "body_radius": 0.029680124233625125
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_043.ork",
+    "index": 43,
+    "combo_index": 0,
+    "mc_sample": 43,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10170048047350719,
+      "fin_root_chord": 0.15048636683820235,
+      "body_radius": 0.029311656926221844
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_044.ork",
+    "index": 44,
+    "combo_index": 0,
+    "mc_sample": 44,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10036366196592567,
+      "fin_root_chord": 0.1471368232261782,
+      "body_radius": 0.02926459685274867
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_045.ork",
+    "index": 45,
+    "combo_index": 0,
+    "mc_sample": 45,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09992921374777161,
+      "fin_root_chord": 0.1516964113635017,
+      "body_radius": 0.03041906328394719
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_046.ork",
+    "index": 46,
+    "combo_index": 0,
+    "mc_sample": 46,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09994663332335264,
+      "fin_root_chord": 0.14994424196612713,
+      "body_radius": 0.030207204716637997
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_047.ork",
+    "index": 47,
+    "combo_index": 0,
+    "mc_sample": 47,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10028691220950431,
+      "fin_root_chord": 0.14984093640634172,
+      "body_radius": 0.030133855731171916
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_048.ork",
+    "index": 48,
+    "combo_index": 0,
+    "mc_sample": 48,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09932627598937022,
+      "fin_root_chord": 0.15012403441482922,
+      "body_radius": 0.029693951600470093
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_049.ork",
+    "index": 49,
+    "combo_index": 0,
+    "mc_sample": 49,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09808644831952133,
+      "fin_root_chord": 0.15195775154516614,
+      "body_radius": 0.030078524283722673
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_050.ork",
+    "index": 50,
+    "combo_index": 0,
+    "mc_sample": 50,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09856099635599445,
+      "fin_root_chord": 0.1503242168612343,
+      "body_radius": 0.02916265852764782
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_051.ork",
+    "index": 51,
+    "combo_index": 0,
+    "mc_sample": 51,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10068896037215926,
+      "fin_root_chord": 0.14868740270303404,
+      "body_radius": 0.030140343383475713
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_052.ork",
+    "index": 52,
+    "combo_index": 0,
+    "mc_sample": 52,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10090797845714754,
+      "fin_root_chord": 0.15161188495150593,
+      "body_radius": 0.03049136975551153
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_053.ork",
+    "index": 53,
+    "combo_index": 0,
+    "mc_sample": 53,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10166404738055043,
+      "fin_root_chord": 0.14838128394536929,
+      "body_radius": 0.029517441618883814
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_054.ork",
+    "index": 54,
+    "combo_index": 0,
+    "mc_sample": 54,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10021940987756595,
+      "fin_root_chord": 0.14922553370317462,
+      "body_radius": 0.029589306660387806
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_055.ork",
+    "index": 55,
+    "combo_index": 0,
+    "mc_sample": 55,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10123300588825722,
+      "fin_root_chord": 0.1489028333569363,
+      "body_radius": 0.03046578650643712
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_056.ork",
+    "index": 56,
+    "combo_index": 0,
+    "mc_sample": 56,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09916367135256048,
+      "fin_root_chord": 0.1500903427753903,
+      "body_radius": 0.029979618736932282
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_057.ork",
+    "index": 57,
+    "combo_index": 0,
+    "mc_sample": 57,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10174417428019586,
+      "fin_root_chord": 0.1479876469054921,
+      "body_radius": 0.02977250825982961
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_058.ork",
+    "index": 58,
+    "combo_index": 0,
+    "mc_sample": 58,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09974038824001216,
+      "fin_root_chord": 0.15295425338433502,
+      "body_radius": 0.03008629395886106
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_059.ork",
+    "index": 59,
+    "combo_index": 0,
+    "mc_sample": 59,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10099443207782781,
+      "fin_root_chord": 0.15234475494527114,
+      "body_radius": 0.02994068083694506
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_060.ork",
+    "index": 60,
+    "combo_index": 0,
+    "mc_sample": 60,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.1000754334415458,
+      "fin_root_chord": 0.14889557431098474,
+      "body_radius": 0.030109691250681928
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_061.ork",
+    "index": 61,
+    "combo_index": 0,
+    "mc_sample": 61,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10064664505267105,
+      "fin_root_chord": 0.14924194637324226,
+      "body_radius": 0.030214378219230807
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_062.ork",
+    "index": 62,
+    "combo_index": 0,
+    "mc_sample": 62,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.1009871584453961,
+      "fin_root_chord": 0.1485747630955372,
+      "body_radius": 0.02938776548413975
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_063.ork",
+    "index": 63,
+    "combo_index": 0,
+    "mc_sample": 63,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09896388230002275,
+      "fin_root_chord": 0.14773654759446891,
+      "body_radius": 0.03086183286039165
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_064.ork",
+    "index": 64,
+    "combo_index": 0,
+    "mc_sample": 64,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09861313726649798,
+      "fin_root_chord": 0.14807560984894644,
+      "body_radius": 0.0307307221461211
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_065.ork",
+    "index": 65,
+    "combo_index": 0,
+    "mc_sample": 65,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10149824816334986,
+      "fin_root_chord": 0.14817860799428742,
+      "body_radius": 0.029552636490522085
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_066.ork",
+    "index": 66,
+    "combo_index": 0,
+    "mc_sample": 66,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10110961935296471,
+      "fin_root_chord": 0.1528309585563658,
+      "body_radius": 0.02999743906663996
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_067.ork",
+    "index": 67,
+    "combo_index": 0,
+    "mc_sample": 67,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09857559001020501,
+      "fin_root_chord": 0.1470836177262492,
+      "body_radius": 0.030703740930656857
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_068.ork",
+    "index": 68,
+    "combo_index": 0,
+    "mc_sample": 68,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09852728887114609,
+      "fin_root_chord": 0.15106595204167714,
+      "body_radius": 0.02897491394948449
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_069.ork",
+    "index": 69,
+    "combo_index": 0,
+    "mc_sample": 69,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10002531972648254,
+      "fin_root_chord": 0.15116557461385732,
+      "body_radius": 0.029390593469788184
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_070.ork",
+    "index": 70,
+    "combo_index": 0,
+    "mc_sample": 70,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09879910260664024,
+      "fin_root_chord": 0.15182474715709357,
+      "body_radius": 0.030457951271178004
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_071.ork",
+    "index": 71,
+    "combo_index": 0,
+    "mc_sample": 71,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10095593601566218,
+      "fin_root_chord": 0.14778634650934389,
+      "body_radius": 0.02975791528333321
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_072.ork",
+    "index": 72,
+    "combo_index": 0,
+    "mc_sample": 72,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09920379476712377,
+      "fin_root_chord": 0.1499315042721092,
+      "body_radius": 0.03026905771850196
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_073.ork",
+    "index": 73,
+    "combo_index": 0,
+    "mc_sample": 73,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10182249302818788,
+      "fin_root_chord": 0.14871867736129232,
+      "body_radius": 0.029652028694164646
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_074.ork",
+    "index": 74,
+    "combo_index": 0,
+    "mc_sample": 74,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09809943796554503,
+      "fin_root_chord": 0.15033118825396094,
+      "body_radius": 0.030088286679226854
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_075.ork",
+    "index": 75,
+    "combo_index": 0,
+    "mc_sample": 75,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09842358961500301,
+      "fin_root_chord": 0.14784203758238346,
+      "body_radius": 0.030114114165069452
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_076.ork",
+    "index": 76,
+    "combo_index": 0,
+    "mc_sample": 76,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10186492764857273,
+      "fin_root_chord": 0.15057625531940624,
+      "body_radius": 0.029573378324720588
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_077.ork",
+    "index": 77,
+    "combo_index": 0,
+    "mc_sample": 77,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10121744366245189,
+      "fin_root_chord": 0.14980428960933173,
+      "body_radius": 0.029704646493018256
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_078.ork",
+    "index": 78,
+    "combo_index": 0,
+    "mc_sample": 78,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09807134713590795,
+      "fin_root_chord": 0.1476548639805944,
+      "body_radius": 0.029635458081128194
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_079.ork",
+    "index": 79,
+    "combo_index": 0,
+    "mc_sample": 79,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10118726835330065,
+      "fin_root_chord": 0.1483958444517986,
+      "body_radius": 0.029918667039727544
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_080.ork",
+    "index": 80,
+    "combo_index": 0,
+    "mc_sample": 80,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10042406328280006,
+      "fin_root_chord": 0.15220643372265605,
+      "body_radius": 0.031105520980296085
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_081.ork",
+    "index": 81,
+    "combo_index": 0,
+    "mc_sample": 81,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09965028627709473,
+      "fin_root_chord": 0.1492451042604431,
+      "body_radius": 0.030561930365396322
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_082.ork",
+    "index": 82,
+    "combo_index": 0,
+    "mc_sample": 82,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.1006077241023199,
+      "fin_root_chord": 0.15220494379051394,
+      "body_radius": 0.029266477377304503
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_083.ork",
+    "index": 83,
+    "combo_index": 0,
+    "mc_sample": 83,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09899135825180544,
+      "fin_root_chord": 0.14841997417798547,
+      "body_radius": 0.029451607210772678
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_084.ork",
+    "index": 84,
+    "combo_index": 0,
+    "mc_sample": 84,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10126627505369565,
+      "fin_root_chord": 0.14763166847912473,
+      "body_radius": 0.029414216685587326
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_085.ork",
+    "index": 85,
+    "combo_index": 0,
+    "mc_sample": 85,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10037773465502581,
+      "fin_root_chord": 0.14787703946515618,
+      "body_radius": 0.030864348822202795
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_086.ork",
+    "index": 86,
+    "combo_index": 0,
+    "mc_sample": 86,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.0992413386956963,
+      "fin_root_chord": 0.14786323159782686,
+      "body_radius": 0.03038866878803087
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_087.ork",
+    "index": 87,
+    "combo_index": 0,
+    "mc_sample": 87,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09866212689094112,
+      "fin_root_chord": 0.1487083204940276,
+      "body_radius": 0.029933088517741978
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_088.ork",
+    "index": 88,
+    "combo_index": 0,
+    "mc_sample": 88,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09846196025466143,
+      "fin_root_chord": 0.14712688809801863,
+      "body_radius": 0.02986680625499552
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_089.ork",
+    "index": 89,
+    "combo_index": 0,
+    "mc_sample": 89,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09869856588374341,
+      "fin_root_chord": 0.14732029159576304,
+      "body_radius": 0.03023576926127257
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_090.ork",
+    "index": 90,
+    "combo_index": 0,
+    "mc_sample": 90,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10072285810719803,
+      "fin_root_chord": 0.14936178274099216,
+      "body_radius": 0.0301758782041996
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_091.ork",
+    "index": 91,
+    "combo_index": 0,
+    "mc_sample": 91,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10001810494808892,
+      "fin_root_chord": 0.15225002965340764,
+      "body_radius": 0.029639220983228576
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_092.ork",
+    "index": 92,
+    "combo_index": 0,
+    "mc_sample": 92,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09817390024805117,
+      "fin_root_chord": 0.14808899045757914,
+      "body_radius": 0.03140704193163239
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_093.ork",
+    "index": 93,
+    "combo_index": 0,
+    "mc_sample": 93,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09899755030332885,
+      "fin_root_chord": 0.15042739591045662,
+      "body_radius": 0.03019292327627825
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_094.ork",
+    "index": 94,
+    "combo_index": 0,
+    "mc_sample": 94,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09819701647971038,
+      "fin_root_chord": 0.14924168483075742,
+      "body_radius": 0.030130578858454077
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_095.ork",
+    "index": 95,
+    "combo_index": 0,
+    "mc_sample": 95,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.09840668761161486,
+      "fin_root_chord": 0.15200075132273136,
+      "body_radius": 0.030131374612573567
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_096.ork",
+    "index": 96,
+    "combo_index": 0,
+    "mc_sample": 96,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10169936747607225,
+      "fin_root_chord": 0.14759467884947924,
+      "body_radius": 0.030463719240779088
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_097.ork",
+    "index": 97,
+    "combo_index": 0,
+    "mc_sample": 97,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10161061257571047,
+      "fin_root_chord": 0.15287742408351956,
+      "body_radius": 0.029764237596275025
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_098.ork",
+    "index": 98,
+    "combo_index": 0,
+    "mc_sample": 98,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.10111791016308533,
+      "fin_root_chord": 0.1508548996559733,
+      "body_radius": 0.029853914407098222
+    }
+  },
+  {
+    "file": "monte_carlo_study/rocket_mc_099.ork",
+    "index": 99,
+    "combo_index": 0,
+    "mc_sample": 99,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_root_chord": 0.15,
+      "body_radius": 0.03
+    },
+    "actual_parameters": {
+      "fin_height": 0.0985382088336526,
+      "fin_root_chord": 0.15021640821568583,
+      "body_radius": 0.030076281256051232
+    }
+  }
+]

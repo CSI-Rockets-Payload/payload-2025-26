@@ -1,0 +1,338 @@
+[
+  {
+    "file": "parametric_study/rocket_h0.08_n3_l0.5.ork",
+    "index": 0,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.08_n3_l0.6.ork",
+    "index": 1,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.08_n3_l0.7.ork",
+    "index": 2,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 3,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.08_n4_l0.5.ork",
+    "index": 3,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.08_n4_l0.6.ork",
+    "index": 4,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.08_n4_l0.7.ork",
+    "index": 5,
+    "nominal_parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.08,
+      "fin_count": 4,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n3_l0.5.ork",
+    "index": 6,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n3_l0.6.ork",
+    "index": 7,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n3_l0.7.ork",
+    "index": 8,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 3,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n4_l0.5.ork",
+    "index": 9,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n4_l0.6.ork",
+    "index": 10,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.1_n4_l0.7.ork",
+    "index": 11,
+    "nominal_parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.1,
+      "fin_count": 4,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n3_l0.5.ork",
+    "index": 12,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n3_l0.6.ork",
+    "index": 13,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n3_l0.7.ork",
+    "index": 14,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 3,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n4_l0.5.ork",
+    "index": 15,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n4_l0.6.ork",
+    "index": 16,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.12_n4_l0.7.ork",
+    "index": 17,
+    "nominal_parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.12,
+      "fin_count": 4,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n3_l0.5.ork",
+    "index": 18,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n3_l0.6.ork",
+    "index": 19,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n3_l0.7.ork",
+    "index": 20,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 3,
+      "body_length": 0.7
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n4_l0.5.ork",
+    "index": 21,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.5
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.5
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n4_l0.6.ork",
+    "index": 22,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.6
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.6
+    }
+  },
+  {
+    "file": "parametric_study/rocket_h0.14_n4_l0.7.ork",
+    "index": 23,
+    "nominal_parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.7
+    },
+    "parameters": {
+      "fin_height": 0.14,
+      "fin_count": 4,
+      "body_length": 0.7
+    }
+  }
+]
