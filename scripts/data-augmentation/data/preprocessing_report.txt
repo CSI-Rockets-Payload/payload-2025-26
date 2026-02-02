@@ -1,0 +1,25 @@
+======================================================================
+DATASET PREPROCESSING SUMMARY
+======================================================================
+Generated: 2025-10-30T18:09:02.308519
+Random Seed: 42
+
+Dataset Splits:
+  Train:       8,316 samples (70.0%)
+  Validation:  1,782 samples (15.0%)
+  Test:        1,782 samples (15.0%)
+  Total:      11,880 samples
+
+Preprocessing Configuration:
+  Sensor noise:     True (level: medium)
+  Augmentation:     True (factor: 3)
+  Normalization:    True (method: standard)
+  Stratification:   apogee
+
+Feature Statistics (Training Set):
+  mass_variation_percent        :       0.00 ±     1.00
+  cd_multiplier                 :       0.00 ±     1.00
+  thrust_scale                  :       0.00 ±     1.00
+  cg_offset_m                   :      -0.00 ±     1.00
+  augmentation_id               :       1.50 ±     1.12
+======================================================================
