@@ -49,7 +49,7 @@ class CAE1D(Model):
         x = inp
         for c, k, s in zip(self.enc_channels, self.enc_kernels, self.enc_strides):
             x = layers.Conv1D(c, k, strides=s, padding="same",
-                              activation=self.activation)(x)
+                              activation="relu")(x)
         return Model(inp, x, name="encoder_1dcae")
 
     def _decoder(self):
@@ -63,7 +63,7 @@ class CAE1D(Model):
             # x = layers.Conv1DTranspose(c, k, strides=s, padding="same",
             #                            activation=self.activation)(x)
             x = layers.UpSampling1D(size= s)(x)
-            x = layers.Conv1D(c, k, padding='same', activation=self.activation)(x)
+            x = layers.Conv1D(c, k, padding='same', activation="relu")(x)
         out = layers.Activation("linear", name="reconstruction")(x)
         return Model(inp, out, name="decoder_1dcae")
     
