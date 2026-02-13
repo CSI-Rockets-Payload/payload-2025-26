@@ -1,0 +1,7 @@
+name: payload
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+prefix: /Users/sonya0706/opt/anaconda3/envs/payload
+
