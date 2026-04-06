@@ -1,0 +1,6 @@
+{
+  "window_length": 52,
+  "n_channels": 3,
+  "score_type": "relative_mse",
+  "predict_every_n_samples": 13
+}
