@@ -1,0 +1,9 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY cnn1d.py .
+
+RUN pip install --no-cache-dir tensorflow-cpu keras numpy matplotlib
+
+CMD ["python", "cnn1d.py"]
