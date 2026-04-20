@@ -10,3 +10,21 @@ services:
     environment:
      - PYTHONUNBUFFERED=1
     command: python cnn1d.py
+  
+  redis:
+    image: redis:alpine
+  
+  celery-worker:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    command: celery -A tasks worker --loglevel=info
+    depends_on:
+      - redis
+  celery-beat:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    command: celery -A tasks beat --loglevel=info
+    depends_on:
+      - redis
