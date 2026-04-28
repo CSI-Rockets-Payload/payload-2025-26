@@ -14,7 +14,6 @@ import tensorflow as tf
 
 
 
-
 class OnlineDetector:
 
     def __init__(self, artifact_dir="artifacts"):

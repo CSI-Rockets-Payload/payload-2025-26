@@ -1,0 +1,37 @@
+services:
+  cnn1d:
+    build: 
+      context: .
+      dockerfile: .docker/Dockerfile
+    container_name: cnn1d_model
+    image: cnn1d:latest
+    volumes:
+      - .:/workspace:cached
+    environment:
+     - PYTHONUNBUFFERED=1
+    command: python model/cnn1d.py
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    volumes:
+      - .:/workspace:cached
+    depends_on:
+      - redis
+    command: ["celery", "-A", "src.celery_app", "worker", "--loglevel=info"]
+
+  celery_beat:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    volumes:
+      - .:/workspace:cached
+    depends_on:
+      - redis
+    command: ["celery", "-A", "src.celery_app", "beat", "--loglevel=info"]
