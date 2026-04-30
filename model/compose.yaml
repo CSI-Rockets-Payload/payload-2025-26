@@ -1,0 +1,30 @@
+services:
+  cnn1d:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    container_name: cnn1d_model
+    image: cnn1d:latest
+    volumes:
+      - .:/app
+    environment:
+     - PYTHONUNBUFFERED=1
+    command: python cnn1d.py
+  
+  redis:
+    image: redis:alpine
+  
+  celery-worker:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    command: celery -A tasks worker --loglevel=info
+    depends_on:
+      - redis
+  celery-beat:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    command: celery -A tasks beat --loglevel=info
+    depends_on:
+      - redis
