@@ -3,8 +3,10 @@ FROM python:3.10
 WORKDIR /app
 
 COPY cnn1d.py .
+COPY gps.py .
 #COPY helloworld.py .
 
-RUN pip install --no-cache-dir tensorflow-cpu keras numpy matplotlib
+RUN pip3 install --no-cache-dir tensorflow keras numpy matplotlib
+RUN pip3 install --no-cache-dir serial pyserial
 
 CMD ["python", "cnn1d.py"]

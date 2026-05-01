@@ -10,6 +10,19 @@ services:
     environment:
      - PYTHONUNBUFFERED=1
     command: python cnn1d.py
+
+  gps:
+    build: 
+      context: .
+
+      dockerfile: dockerfile
+    container_name: gps_model
+    image: gps:latest
+    volumes:
+      - .:/app
+    environment:
+     - PYTHONUNBUFFERED=1
+    command: python gps.py  
   
   redis:
     image: redis:alpine
