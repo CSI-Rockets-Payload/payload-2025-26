@@ -8,16 +8,15 @@ import numpy as np
 
 class CAE1D(Model):
     def __init__(self, 
-                input_dim: int = 52,
+                window_length: int = 52,
                 enc_channels = (16, 32, 32),
                 enc_kernels  = (4, 4, 1),
                 enc_strides = (2, 2, 1),
-                dec_channels = (32, 16, 1),
+                dec_channels = (32, 16, 3),
                 dec_kernels  = (3, 3, 3),
                 dec_strides = (2, 2, 1),
                 num_classes = 2,
-                activation = "tanh",
-                output_activation = "softmax"
+                activation = "tanh"
     ):
         """
         Parameters of the CNN
@@ -25,7 +24,7 @@ class CAE1D(Model):
         from Chen, Yu & Wang (2020) - Journal of Process Control.
         """
         super().__init__()
-        self.input_dim = input_dim
+        self.window_length = window_length
         self.enc_channels = enc_channels
         self.enc_kernels = enc_kernels
         self.enc_strides = enc_strides
@@ -34,7 +33,6 @@ class CAE1D(Model):
         self.dec_strides = dec_strides
         self.num_classes = num_classes
         self.activation = activation
-        self.output_activation = output_activation
         
         # Architecture building blocks
         self.encoder_net = self._encoder()
@@ -47,11 +45,11 @@ class CAE1D(Model):
         """
         Build the encoder: Input vector -> convolution layers
         """
-        inp = layers.Input(shape=(self.input_dim, 1))
+        inp = layers.Input(shape=(self.window_length, 3))
         x = inp
         for c, k, s in zip(self.enc_channels, self.enc_kernels, self.enc_strides):
             x = layers.Conv1D(c, k, strides=s, padding="same",
-                              activation=self.activation)(x)
+                              activation="relu")(x)
         return Model(inp, x, name="encoder_1dcae")
 
     def _decoder(self):
@@ -65,15 +63,15 @@ class CAE1D(Model):
             # x = layers.Conv1DTranspose(c, k, strides=s, padding="same",
             #                            activation=self.activation)(x)
             x = layers.UpSampling1D(size= s)(x)
-            x = layers.Conv1D(c, k, padding='same', activation=self.activation)(x)
-        out = layers.Activation(self.output_activation, name="reconstruction")(x)
+            x = layers.Conv1D(c, k, padding='same', activation="relu")(x)
+        out = layers.Activation("linear", name="reconstruction")(x)
         return Model(inp, out, name="decoder_1dcae")
     
     def build_cnn1d_autoencoder(self):
         """
         Autoencoder architecture for phase 1
         """
-        inp = layers.Input(shape=(self.input_dim, 1))
+        inp = layers.Input(shape=(self.window_length, 3))
         z = self.encoder_net(inp)
         x_hat = self.decoder_net(z)
         ae = Model(inp, x_hat, name="1DCAE_unsupervised")
@@ -180,14 +178,14 @@ if __name__ == "__main__":
     print("Building dummy CAE1D model...")
 
     # dummy data (e.g., 128 samples, 52 time steps, 1 feature)
-    X = np.random.rand(128, 52, 1).astype(np.float32)
+    X = np.random.rand(128, 52, 3).astype(np.float32)
 
     # IMPORTANT: match num_classes with your model
     num_classes = 2
     y_int = np.random.randint(0, num_classes, 128)
     y = tf.keras.utils.to_categorical(y_int, num_classes=num_classes)
 
-    model = CAE1D(input_dim=52, num_classes=num_classes)
+    model = CAE1D(window_length=52, num_classes=num_classes)
 
     # Run a short 2-phase training just to get histories
     ae, clf, hist1, hist2 = model.train_two_phase(

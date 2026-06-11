@@ -1,0 +1,12 @@
+FROM nvcr.io/nvidia/l4t-ml:r35.2.1-py3
+
+WORKDIR /app
+
+COPY cnn1d.py .
+COPY detector.py .
+COPY requirements.txt .
+COPY artifacts ./artifacts
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "detector.py"]
